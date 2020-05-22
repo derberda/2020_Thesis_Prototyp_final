@@ -5,6 +5,9 @@ let renderer;
 let scene = new THREE.Scene();
 let shoe;
 
+let productContainer = document.querySelector('#divProduct');
+let product = document.querySelector('canvas');
+
 init = () => {
     container = document.querySelector('.scene');
 
@@ -37,6 +40,7 @@ init = () => {
         scene.add(gltf.scene);
         shoe = gltf.scene.children[0];
         scene.position.set(0, -.05, 0);
+
     })
 
     container.appendChild(renderer.domElement);
@@ -50,3 +54,24 @@ animate = () => {
 }
 
 init();
+
+//Responsive
+window.addEventListener('resize', () => {
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(container.clientWidth, container.clientHeight);
+})
+
+//Canvas element je nach dem ob es fokussiert wird klasse hinzufügen oder removen
+focusCanvasElement = () =>{
+    productContainer.addEventListener('focus', () =>{
+        productContainer.classList.add('blurOuterContainer');
+        product.classList.add('focusCanvas');
+    })
+    productContainer.addEventListener('blur', () =>{
+        productContainer.classList.remove('blurOuterContainer');
+        product.classList.remove('focusCanvas');
+    })
+}
+focusCanvasElement();
