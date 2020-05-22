@@ -88,13 +88,8 @@ a{
 }
 
 /*Focus styling*/
-.carousel-control-next:focus{
-    background-color: crimson;
-}
-.carousel-control-prev:focus{
-    background-color: crimson;
-}
 
+/* 
 .focusCanvas{
     border: 1rem crimson solid;
 }
@@ -103,9 +98,33 @@ a{
 }
 
 .blurOuterContainer{
-    box-shadow : 0rem 0rem 0rem 0rem transparent inset;;
-}
+    box-shadow : 0rem 0rem 0rem 0rem transparent inset;
+} */
 
+
+/* FOKUS STYLES */
+
+.focusCanvas{
+    border: 1rem crimson solid;
+}
+.carousel-control-next:focus{
+    background-color: crimson;
+}
+.carousel-control-prev:focus{
+    background-color: crimson;
+}
+h1:focus{
+    color: white;
+    box-shadow: 0rem 0rem 0rem 2rem crimson inset;
+}
+h2:focus{
+    color: white;
+    box-shadow: 0rem 0rem 0rem 2rem crimson inset;
+}
+.carousel-inner:focus-within p{
+    color: white;
+    box-shadow: 0rem 0rem 0rem 2rem crimson inset;
+}
 
 
 @media only screen and (min-width: 600px) {

@@ -145,14 +145,15 @@ window.addEventListener('resize', () => {
 //Canvas element je nach dem ob es fokussiert wird klasse hinzufügen oder removen
 focusCanvasElement = () => {
     productContainer.addEventListener('focus', () => {
-        productContainer.classList.add('blurOuterContainer');
+        // productContainer.classList.add('blurOuterContainer');
         product.classList.add('focusCanvas');
     })
     productContainer.addEventListener('blur', () => {
-        productContainer.classList.remove('blurOuterContainer');
+        // productContainer.classList.remove('blurOuterContainer');
         product.classList.remove('focusCanvas');
     })
 }
+
 focusCanvasElement();
 
 //jeweilige Hotspots je nach Ansicht anzeigen lassen
