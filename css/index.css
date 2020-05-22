@@ -7,3 +7,113 @@ html, body {
     box-sizing: border-box;
     background-color: #e5e5e5;
 }
+
+p {
+    font: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    top: 50%;
+    text-align: center;
+    width: 17rem;
+    margin: 0 auto;
+    height: 10rem;
+}
+
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/mike-yukhtenko-wfh8dDlNFOk-unsplash\ \(1\).jpg);
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    top: 50%;
+}
+
+a {
+    margin-top: 10rem;
+}
+
+.carousel-indicators {
+    bottom: -60px;
+}
+
+.carousel-control-prev {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    left: 5%;
+}
+
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    right: 5%;
+}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.carousel-indicators li.active {
+    background-color: crimson;
+}
+
+/*Focus styling*/
+
+.carousel-control-next:focus {
+    background-color: crimson;
+}
+
+.carousel-control-prev:focus {
+    background-color: crimson;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .scene {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background-image: url(../images/mike-yukhtenko-wfh8dDlNFOk-unsplash\ \(1\).jpg);
+    }
+    canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    p {
+        width: 25rem;
+    }
+    .scene {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        background-image: url(../images/mike-yukhtenko-wfh8dDlNFOk-unsplash\ \(1\).jpg);
+    }
+    canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
