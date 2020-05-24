@@ -8,6 +8,7 @@ let shoe;
 let productContainer = document.querySelector('#divProduct');
 let product = document.querySelector('canvas');
 
+
 init = () => {
     container = document.querySelector('.scene');
 
@@ -145,15 +146,12 @@ window.addEventListener('resize', () => {
 //Canvas element je nach dem ob es fokussiert wird klasse hinzufügen oder removen
 focusCanvasElement = () => {
     productContainer.addEventListener('focus', () => {
-        // productContainer.classList.add('blurOuterContainer');
         product.classList.add('focusCanvas');
     })
     productContainer.addEventListener('blur', () => {
-        // productContainer.classList.remove('blurOuterContainer');
         product.classList.remove('focusCanvas');
     })
 }
-
 focusCanvasElement();
 
 //jeweilige Hotspots je nach Ansicht anzeigen lassen
