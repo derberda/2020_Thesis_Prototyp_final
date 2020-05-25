@@ -8,7 +8,6 @@ let shoe;
 let productContainer = document.querySelector('#divProduct');
 let product = document.querySelector('canvas');
 
-
 init = () => {
     container = document.querySelector('.scene');
 
@@ -31,13 +30,11 @@ init = () => {
 
     //Renderer Setup
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-
-    // renderer.setClearColor("#e5e5e5");
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
     let loader = new THREE.GLTFLoader();
-    loader.load("../blender/adidas_stan-smith2.gltf", (gltf) => {
+    loader.load("../blender/adidas_stan-smith3.gltf", (gltf) => {
         scene.add(gltf.scene);
         shoe = gltf.scene.children[0];
         scene.position.set(0, -.05, 0);
@@ -97,7 +94,6 @@ getActiveStatus = () => {
             case "info_4":
                 console.log("test: 4")
                 TweenMax.to(shoe.rotation, 1, { z: 1.3 });
-                // TweenMax.to(shoe.parent.children[7].rotation, 1, { z: 1.3 });
                 TweenMax.to(shoe.parent.children[7].rotation, 1, { y: .09 });
                 TweenMax.to(camera.position, 1, { x: -.8, y: .02, z: 0 });
 
