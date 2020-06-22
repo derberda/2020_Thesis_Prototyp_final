@@ -1,5 +1,8 @@
 Die HTML-Dateien können nur dann fehlerfrei dargestellt werden, wenn sie über einen Live-Server aufgerufen werden oder sie auf einem Webspace liegen. 
 
+!!! Der finale Code auf diesem Datenträger ist minimiert --> zum durchschauen entweder selbst entminimieren oder über die unten stehenden Links !!!
+- unminify HTML, CSS, JavaScript: https://unminify.com/
+
 Die finalen Code-Dateien sind auch unter diesen Links zugänglich:
 
 - fertiger Prototyp A (3D-Produktpräsenation; komprimiert & minimierter Code):
